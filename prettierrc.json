@@ -1,0 +1,228 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "description": "Hi"
+    },
+    "runners": {
+      "type": "object",
+      "properties": {
+        "runner1": {
+          "type": "object",
+          "properties": {
+            "config-id": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "config-id"
+          ]
+        },
+        "runner2": {
+          "type": "object",
+          "properties": {
+            "config-id": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "config-id"
+          ]
+        },
+        "runner3": {
+          "type": "object",
+          "properties": {
+            "config-id": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "config-id"
+          ]
+        }
+      },
+      "required": [
+        "runner1",
+        "runner2",
+        "runner3"
+      ]
+    },
+    "images": {
+      "type": "object",
+      "properties": {
+        "hub-image": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "auth": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "username",
+                "password"
+              ]
+            }
+          },
+          "required": [
+            "image",
+            "auth"
+          ]
+        }
+      },
+      "required": [
+        "hub-image"
+      ]
+    },
+    "jobs": {
+      "type": "object",
+      "properties": {
+        "catalyst": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "image",
+            "steps"
+          ]
+        },
+        "approve": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "object",
+              "properties": {
+                "type-name": {
+                  "type": "string"
+                },
+                "type-variables": {
+                  "type": "object",
+                  "properties": {
+                    "reviewers": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reviewers",
+                    "message"
+                  ]
+                }
+              },
+              "required": [
+                "type-name",
+                "type-variables"
+              ]
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        "zoho": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "image",
+            "steps"
+          ]
+        },
+        "test": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "image",
+            "steps"
+          ]
+        }
+      },
+      "required": [
+        "catalyst",
+        "approve",
+        "zoho",
+        "test"
+      ]
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "runner": {
+            "type": "string"
+          },
+          "jobs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "runner",
+          "jobs"
+        ]
+      }
+    },
+    "pipeline-runner": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "runners",
+    "images",
+    "jobs",
+    "stages",
+    "pipeline-runner"
+  ]
+}
