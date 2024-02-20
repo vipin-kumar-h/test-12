@@ -15,7 +15,8 @@
                   "type": "object",
                   "properties": {
                     "config-id": {
-                      "type": "number"
+                      "type": "number",
+                    "enum": [1, 2, 3]
                     }
                   },
                   "required": ["config-id"]
