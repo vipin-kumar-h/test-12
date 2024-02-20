@@ -10,24 +10,17 @@
         "runners": {
             "type": "object",
             "description": "Configuration for CI/CD runners",
-            "properties": {
-                "Test": {
-                    "type": "object",
-                    "patternProperties": {
-                        ".*": {
-                            "type": "object",
-                            "properties": {
-                                "config-id": {
-                                    "type": "number"
-                                }
-                            },
-                            "required": [
-                                "config-id"
-                            ]
-                        }
+            "patternProperties": {
+                ".*": {
+                  "type": "object",
+                  "properties": {
+                    "config-id": {
+                      "type": "number"
                     }
+                  },
+                  "required": ["config-id"]
                 }
-            }
+              }
         },
         "images": {
             "type": "object",
