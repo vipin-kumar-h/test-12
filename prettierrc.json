@@ -5,49 +5,12 @@
   "properties": {
     "version": {
       "type": "number",
-      "description": "Hi"
+      "description": ""
     },
     "runners": {
       "type": "object",
-      "properties": {
-        "runner1": {
-          "type": "object",
-          "properties": {
-            "config-id": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "config-id"
-          ]
-        },
-        "runner2": {
-          "type": "object",
-          "properties": {
-            "config-id": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "config-id"
-          ]
-        },
-        "runner3": {
-          "type": "object",
-          "properties": {
-            "config-id": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "config-id"
-          ]
-        }
-      },
       "required": [
-        "runner1",
-        "runner2",
-        "runner3"
+        "config-id"
       ]
     },
     "images": {
