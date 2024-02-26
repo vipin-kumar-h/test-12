@@ -69,13 +69,7 @@
                   "properties": {
                   }
                 }
-            },
-            "required": [
-                "catalyst",
-                "approve",
-                "zoho",
-                "test"
-            ]
+            }
         },
         "stages": {
             "type": "array",
