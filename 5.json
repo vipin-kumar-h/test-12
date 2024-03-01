@@ -58,8 +58,7 @@
                 },
                 "required": ["image"]
             }
-        }
-        }
+        },
         "stages": {
             "type": "array",
             "description": "Sequences of jobs in the CI/CD pipeline",
