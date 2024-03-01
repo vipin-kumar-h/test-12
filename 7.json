@@ -12,51 +12,63 @@
             "description": "Configuration for CI/CD runners",
             "patternProperties": {
                 ".*": {
-                  "type": "object",
-                  "description": "Individual Runner",
-                  "properties": {
-                    "config-id": {
-                        "type": "number",
-                        "description": "Configuration 1-> Low 2-> Medium 3-> High",
-                        "enum": [1, 2, 3]
-                    }
-                  },
-                  "required": ["config-id"]
+                    "type": "object",
+                    "description": "Individual Runner",
+                    "properties": {
+                        "config-id": {
+                            "type": "number",
+                            "description": "Configuration 1-> Low 2-> Medium 3-> High",
+                            "enum": [
+                                1,
+                                2,
+                                3
+                            ]
+                        }
+                    },
+                    "required": [
+                        "config-id"
+                    ]
                 }
-              }
+            }
         },
         "images": {
             "type": "object",
             "description": "Container images for jobs",
             "patternProperties": {
                 ".*": {
-                  "type": "object",
-                  "properties": {
-                    "image":{
-                        "type": "string",
-                        "description": "Image name"
-                    },
-                    "registry":{
-                        "type": "string",
-                        "description": "URL of the registry"
-                    },
-                    "auth":{
-                        "type": "object",
-                        "description": "Authorisation to pull image",
-                        "properties": {
-                            "username":{
-                                "type": "string",
-                                "description": "Username of the account"
-                            },
-                            "password":{
-                                "type": "string",
-                                "description": "Password of the account"
-                            }
+                    "type": "object",
+                    "properties": {
+                        "image": {
+                            "type": "string",
+                            "description": "Image name"
                         },
-                        "required": ["username","password"]
-                    }
-                },
-                "required": ["image"]
+                        "registry": {
+                            "type": "string",
+                            "description": "URL of the registry"
+                        },
+                        "auth": {
+                            "type": "object",
+                            "description": "Authorisation to pull image",
+                            "properties": {
+                                "username": {
+                                    "type": "string",
+                                    "description": "Username of the account"
+                                },
+                                "password": {
+                                    "type": "string",
+                                    "description": "Password of the account"
+                                }
+                            },
+                            "required": [
+                                "username",
+                                "password"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "image"
+                    ]
+                }
             }
         },
         "stages": {
@@ -104,7 +116,6 @@
         "version",
         "runners",
         "images",
-        "jobs",
         "stages"
     ]
 }
