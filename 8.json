@@ -110,9 +110,7 @@
         }
     },
     "required": [
-        "version",
-        "runners",
-        "images",
-        "stages"
+        "stages",
+        "jobs"
     ]
 }
