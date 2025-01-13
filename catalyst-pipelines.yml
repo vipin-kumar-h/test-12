@@ -5,7 +5,7 @@ jobs:
       - echo "Hell"
   world:
     steps:
-      - echo "Wo"
+      - echo "World"
   hello-world:
     steps:
       - echo "Hello"
