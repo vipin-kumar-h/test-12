@@ -3,7 +3,7 @@ jobs:
   hello:
     steps:
       - sleep 60
-      - echo "Hello!!ghdfsfjngsd"
+      - echo "Hello!!ghdfsfadsfsd"
   world:
     steps:
       - echo "World!!"
