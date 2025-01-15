@@ -2,6 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
+      - sleep 60
       - echo "Hello!!!"
   world:
     steps:
