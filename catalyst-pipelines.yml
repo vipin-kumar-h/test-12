@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   hello:
     steps:
-      - sleep 60
+      - sleep 120
       - echo "Helladsfsd"
   world:
     steps:
