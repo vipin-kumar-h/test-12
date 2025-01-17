@@ -3,7 +3,7 @@ jobs:
   hello:
     steps:
       - sleep 120
-      - echo "Hehjbhjllooijijhgco"
+      - echo "Hehjbhjljijhgco"
   world:
     steps:
       - echo "World!!"
