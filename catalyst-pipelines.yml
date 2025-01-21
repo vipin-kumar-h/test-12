@@ -1,6 +1,6 @@
 version: 1.0
 pipeline-when:
-    or:
+  or:
       - equal:
           - << event.ref >>
           - refs/heads/main
