@@ -6,7 +6,7 @@ pipeline-when:
           - refs/heads/mai
       - equal:
           - << event.ref >>
-          - refs/heads/main
+          - refs/heads/mai
 jobs:
   hello:
     steps:
