@@ -1,4 +1,12 @@
 version: 1.0
+pipeline-when:
+    or:
+      - equal:
+          - << event.ref >>
+          - refs/heads/main
+      - equal:
+          - << event.ref >>
+          - refs/heads/main
 jobs:
   hello:
     steps:
