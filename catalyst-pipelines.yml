@@ -1,12 +1,4 @@
 version: 1.0
-pipeline-when:
-  or:
-      - equal:
-          - << event.ref >>
-          - refs/heads/mai
-      - equal:
-          - << event.ref >>
-          - refs/heads/mai
 jobs:
   hello:
     steps:
