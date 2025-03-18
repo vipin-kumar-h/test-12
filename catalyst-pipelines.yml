@@ -17,7 +17,7 @@ stages:
       - hello-world
 images:
   test:
-    image: node:20
+    image: vipinkumarh/ubuntu-test:latest
     auth:
       username: vipinkumarh
       password: Catalyst@9
