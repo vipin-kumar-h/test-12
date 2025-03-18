@@ -1,6 +1,7 @@
-version: 1.0
+version: 1
 jobs:
   hello:
+    image: test
     steps:
       - echo "Hehjbhjljijhgco"
   world:
@@ -14,3 +15,9 @@ stages:
     jobs:
       - hello
       - hello-world
+images:
+  test:
+    image: node:20
+    auth:
+      username: vipinkumarh
+      password: Catalyst@2
