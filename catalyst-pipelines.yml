@@ -17,7 +17,7 @@ stages:
       - hello-world
 images:
   test:
-    image: vipinkumarh/ubuntu-test:latest
+    image: node:20
     registry: registry.hub.docker.com/vipinkumarh/ubuntu-test:latest
     auth:
       username: vipinkumarh
