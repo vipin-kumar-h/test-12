@@ -3,7 +3,7 @@ jobs:
   hello:
     image: test
     steps:
-      - echo "Hehjbhjljijhgco"
+      - echo "Hehjbhjljijhgc"
   world:
     steps:
       - echo "World!!"
