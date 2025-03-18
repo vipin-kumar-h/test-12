@@ -18,7 +18,7 @@ stages:
 images:
   test:
     image: vipinkumarh/ubuntu-test:latest
-    registry: http://registry.hub.docker.com/vipinkumarh/ubuntu-test:latest
+    registry: registry.hub.docker.com/vipinkumarh/ubuntu-test:latest
     auth:
       username: vipinkumarh
       password: Catalyst@2
