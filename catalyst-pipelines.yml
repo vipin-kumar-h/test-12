@@ -20,4 +20,4 @@ images:
     image: vipinkumarh/ubuntu-test:latest
     auth:
       username: vipinkumarh
-      password: Catalyst@9
+      password: Catalyst@2
