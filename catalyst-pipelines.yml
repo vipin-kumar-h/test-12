@@ -17,8 +17,8 @@ stages:
       - hello-world
 images:
   test:
-    image: node:20
-    registry: registry.hub.docker.com/vipinkumarh/test-image:latest
+    image: vipinkumarh/test-image:latest
+    registry: registry.hub.docker.com
     auth:
       username: vipinkumarh
       password: Catalyst@2
