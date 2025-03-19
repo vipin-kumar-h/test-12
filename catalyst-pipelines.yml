@@ -1,24 +1,17 @@
 version: 1
 jobs:
-  hello:
-    image: test
+  angular-test:
     steps:
-      - echo "Hehjbhjljigc"
-  world:
-    steps:
-      - echo "World!!"
-  hello-world:
-    steps:
-      - echo "Hello!"
+      - ls
 stages:
-  - name: build
+  - name: test
     jobs:
-      - hello
-      - hello-world
+      - angular-test
 images:
-  test:
+  TestUbuntuImage:
     image: vipinkumarh/test-image:latest
     registry: registry.hub.docker.com
     auth:
       username: vipinkumarh
       password: Catalyst@2
+pipeline-image: TestUbuntuImage
